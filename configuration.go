@@ -13,6 +13,7 @@ type MinerConfig struct {
 	Pin  string // PIN-NUMBER OF GPIO
 	IP   string // IP ADDRESS
 	Info string // ADDITIONAL INFO
+	OS   string // OS Info
 }
 
 //ConfigurationFile struct to parse config.json
@@ -27,6 +28,7 @@ type ConfigurationFile struct {
 	Pushover        bool          //Enable or disable Pushover notifications
 	PushoverToken   string        //Pushover access token
 	PushoverUser    string        //Pushover user token
+	WebPort		int	      //webserver port
 	Miners          []MinerConfig // An array of the
 }
 
