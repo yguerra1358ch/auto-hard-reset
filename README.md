@@ -67,3 +67,19 @@ If you are building on your workstation type `GOARM=6(or 7) GOARCH=arm GOOS=linu
 * JSON-check
 * instructions
 * statistics
+
+
+### Changes made by JaySmeeeth
+24-Jan-2018 - Web Server Interface including configurable port, default 9090
+Pre 2018: Configurable OS types linux and windows to check ssh 22 and 9630 respectively
+
+### Requirements for JaySmeeth Version
+* hping3
+* linux os
+
+### ToDo
+* Make os types and port checks configurable
+* Add last checks for web interface
+* Make beer
+* Drink beer
+* Have MamaJuana
