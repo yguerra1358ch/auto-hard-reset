@@ -40,14 +40,14 @@ func ReadConfig() (configFile ConfigurationFile) {
 	//get binary dir
 	//os.Args doesn't work the way we want with "go run". You can use next line
 	//for local dev, but use the original for production.
-	dir, err := filepath.Abs("./")
+	//dir, err := filepath.Abs("./")
 	//dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	log.Notice("Reading file config.json...")
-	file := dir + "/config.json"
+	file := "/etc/auto-hard-reset/config.json"
 
 	configFileContent, err := ioutil.ReadFile(file)
 	if err != nil {
