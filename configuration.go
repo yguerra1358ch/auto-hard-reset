@@ -42,9 +42,9 @@ func ReadConfig() (configFile ConfigurationFile) {
 	//for local dev, but use the original for production.
 	//dir, err := filepath.Abs("./")
 	//dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
-	if err != nil {
-		log.Fatal(err)
-	}
+	//if err != nil {
+		//log.Fatal(err)
+	//}
 
 	log.Notice("Reading file config.json...")
 	file := "/etc/auto-hard-reset/config.json"
